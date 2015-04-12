@@ -3,6 +3,8 @@ class CreateKits < ActiveRecord::Migration
     create_table :kits do |t|
       t.integer :organization_id
       t.string :name
+      t.string :description
+      t.integer :total
 
       t.timestamps
     end

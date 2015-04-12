@@ -1,18 +1,15 @@
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron set-height">
-        <h1>End</h1>
-        <h1>Chronic</h1>
-        <h1>Homelessness</h1>
-        <p><img src="" height="100" width="100"></p>
+          <%= raw @org.call_to_action %>
+         <p><img src="" height="100" width="100"></p>
         <p>
-          <a class="btn btn-lg btn-primary" href="../../components/index.html#navbar" role="button">Donate Today &raquo;</a>
+          <a class="btn btn-lg btn-primary" href="choose" role="button">Donate Today &raquo;</a>
         </p>
       </div>
 
       <div class="jumbotron set-height">
-        <h1>Story</h1>
         <p>
-          The chronically homeless are a small subset of the overall homeless population, comprised of individuals who have at least one disabling condition and experience long-term homelessness.
+          <%= @org.description %>
         </p>
         <p>
           When Gabriel is 18, he's going to be chronicly homeless.
@@ -41,9 +38,9 @@
             <p>
               <img src="" height="50" width="100">
             </p>
-            <h3>Housing First</h3>
+            <h3><%= @org.name %></h3>
             <p>
-              Mobilize the Charlotte-Mechklenburg community to end chronic homelessness
+              <%= @org.lower_third %>
             </p>
             <p>
               <a class="btn btn-lg btn-primary" href="../../components/index.html#navbar" role="button">Visit  &raquo;</a>

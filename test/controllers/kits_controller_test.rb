@@ -18,7 +18,7 @@ class KitsControllerTest < ActionController::TestCase
 
   test "should create kit" do
     assert_difference('Kit.count') do
-      post :create, kit: { name: @kit.name, organization_id: @kit.organization_id }
+      post :create, kit: { description: @kit.description, name: @kit.name, organization_id: @kit.organization_id, total: @kit.total }
     end
 
     assert_redirected_to kit_path(assigns(:kit))
@@ -35,7 +35,7 @@ class KitsControllerTest < ActionController::TestCase
   end
 
   test "should update kit" do
-    patch :update, id: @kit, kit: { name: @kit.name, organization_id: @kit.organization_id }
+    patch :update, id: @kit, kit: { description: @kit.description, name: @kit.name, organization_id: @kit.organization_id, total: @kit.total }
     assert_redirected_to kit_path(assigns(:kit))
   end
 

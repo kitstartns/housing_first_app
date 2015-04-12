@@ -5,6 +5,8 @@
     <tr>
       <th>Organization</th>
       <th>Name</th>
+      <th>Description</th>
+      <th>Total</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,6 +16,8 @@
       <tr>
         <td><%= kit.organization_id %></td>
         <td><%= kit.name %></td>
+        <td><%= kit.description %></td>
+        <td><%= kit.total %></td>
         <td><%= link_to 'Show', kit %></td>
         <td><%= link_to 'Edit', edit_kit_path(kit) %></td>
         <td><%= link_to 'Destroy', kit, method: :delete, data: { confirm: 'Are you sure?' } %></td>

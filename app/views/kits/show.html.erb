@@ -10,5 +10,15 @@
   <%= @kit.name %>
 </p>
 
+<p>
+  <strong>Description:</strong>
+  <%= @kit.description %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @kit.total %>
+</p>
+
 <%= link_to 'Edit', edit_kit_path(@kit) %> |
 <%= link_to 'Back', kits_path %>
