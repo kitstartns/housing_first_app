@@ -6,12 +6,14 @@
   <%= stylesheet_link_tag 'bootstrap.min' %>
   <%= stylesheet_link_tag 'navbar' %>
   <%= stylesheet_link_tag 'custom' %>
+  <%= javascript_include_tag '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
     <div class="container">
-       <%= render template: 'layouts/nav' %>
-<%= yield %>
+      <%= render template: 'layouts/nav' %>
+      <%= yield %>
+      <%= render template: 'layouts/footer' %>
     </div>
 </body>
 </html>
