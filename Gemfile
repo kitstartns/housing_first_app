@@ -30,6 +30,8 @@ gem 'activeadmin', github: 'activeadmin'
 
 gem 'awesome_nested_set'
 
+gem 'devise'
+
 gem 'sqlite3'
 
 # group :production do
