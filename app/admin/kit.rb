@@ -1,4 +1,4 @@
-ActiveAdmin.register Organization do
+ActiveAdmin.register Kit do
 
 
   # See permitted parameters documentation:
