@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resources :items
-
   resources :kits
+
+  resources :items
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
@@ -13,6 +13,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'homepage#index'
+  get 'choose' => 'homepage#choose'
+  get 'drop_off' => 'homepage#drop_off'
   get 'donate' => 'homepage#donate'
   get 'share' => 'homepage#share'
 
